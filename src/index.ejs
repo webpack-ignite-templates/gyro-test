@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ignite Test Pages!</title>
+</head>
+
+<body>
+    ${require('_partials/header.ejs')}
+    <nav class="test">
+        Other Tests:
+        <a href="sub-example">Sub Folder</a> |
+        <a href="react-example/react-example.html">React</a> |
+        <a href="sub-example">Vue</a>
+    </nav>
+    <h2>Image Tests - Root</h2>
+    <div class="image-test-area">
+        ${require('_partials/imageTests.ejs')}
+        <div class="image-test">
+            <h3>&lt;img src=''&gt; from page:</h3>
+            <img src="assets/img/test/burst.png" />
+        </div>
+        <div class="image-test">
+            <h3>&lt;img src='data:image'&gt; from page:</h3>
+            <img src="assets/img/test/gyro_logo.svg" class="bg-black">
+        </div>
+        <div class="image-test">
+            <h3>css background: url('') from page:</h3>
+            <div class="background-lg"></div>
+        </div>
+    </div>
+
+    <h2>Code Splitting - Root</h2>
+    <div class="code-split-test-area">
+        <button type="button" id="testButton">Test Code Splitting</button>
+        <div id="code-split-results"></div>
+    </div>
+</body>
+
+</html>

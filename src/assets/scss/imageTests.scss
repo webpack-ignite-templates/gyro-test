@@ -1,0 +1,26 @@
+.image-test-area {
+  display: flex;
+
+  .image-test {
+    flex-basis: 25%;
+
+    img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      &.bg-black {
+        background: black;
+      }
+    }
+
+    .background-lg {
+      width: 100%;
+      height: 80%;
+      max-width: 100px;
+      background: url('../img/test/uhf_tree.jpg') no-repeat left top / cover;
+    }
+
+  }
+}
+
+

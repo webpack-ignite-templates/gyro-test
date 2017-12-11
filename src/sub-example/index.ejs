@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Static Example  - Page 1</title>
+    <meta name="description" content=""/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:image" content=""/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:creator" content=""/>
+
+    <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+    <link rel="shortcut icon" href="../assets/img/icons/favicon.ico">
+
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+    <link rel="apple-touch-icon" href="../assets/img/icons/apple-touch-icon.png">
+
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+    <link rel="icon" href="../assets/img/icons/apple-touch-icon.png">
+
+</head>
+    <body>
+        ${require('_partials/header.ejs')}
+        <h2>Image Tests - Sub Folder</h2>
+        <div class="image-test-area">
+            ${require('_partials/imageTests.ejs')}
+            <div class="image-test">
+                <h3>&lt;img src=''&gt; from page:</h3>
+                <img src="../assets/img/test/burst.png" />
+            </div>
+            <div class="image-test">
+                <h3>&lt;img src='data:image'&gt; from page:</h3>
+                <img src="../assets/img/test/gyro_logo.svg" class="bg-black">
+            </div>
+            <div class="image-test">
+                <h3>css background: url('') from page:</h3>
+                <div class="background-lg"></div>
+            </div>
+        </div>
+
+        <h2>Code Splitting - Sub Folder</h2>
+        <div class="code-split-test-area">
+            <button type="button" id="testButton">Test Code Splitting</button>
+            <div id="code-split-results"></div>
+        </div>
+    </body>
+
+</html>
