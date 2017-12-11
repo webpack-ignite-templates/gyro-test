@@ -261,9 +261,9 @@ module.exports = env => {
 
             plugins: [
 
-                new webpack.DefinePlugin({
+                webpackIgnite.Utils.ifProduction(new webpack.DefinePlugin({
                     'process.env.NODE_ENV': env.NODE_ENV
-                }),
+                })),
 
                 //Cause errors when file path case doesn't match
                 new CaseSensitivePathsPlugin(),
